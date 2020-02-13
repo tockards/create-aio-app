@@ -36,9 +36,17 @@
         </div>
     </header>
     <main>
-        <p>{{ text|safe }}</p>
+        <div class="container-fluid" id="container">
+
+        </div>
     </main>
     <footer class="footer"></footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js" crossorigin></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js" crossorigin></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js" crossorigin></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" crossorigin></script>
+      <script src={{ url('static', filename='js/main.js') }}></script>
+
 </body>
 </html>
 {%- endraw %}
